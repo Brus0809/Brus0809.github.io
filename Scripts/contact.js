@@ -4,14 +4,14 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    const API_URL = 'https://localhost:7262/api/Contact';
+    const API_URL = 'http://netcorereistros.somee.com/api/Contact';
 
     // Campos del formulario
     const fields = {
-        nombre:  document.getElementById('contact-nombre'),
-        email:   document.getElementById('contact-email-input'),
-        asunto:  document.getElementById('contact-asunto'),
-        mensaje: document.getElementById('contact-mensaje'),
+        Nombre:  document.getElementById('contact-nombre'),
+        Correo:   document.getElementById('contact-email-input'),
+        Asunto:  document.getElementById('contact-asunto'),
+        Mensaje: document.getElementById('contact-mensaje'),
     };
 
     const submitBtn = document.getElementById('contact-submit');
