@@ -4,7 +4,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    const API_URL = 'http://netcorereistros.somee.com/api/Contact';
+    const API_URL = 'https://netcorereistros.somee.com/api/Contact';
 
     // Campos del formulario
     const fields = {
