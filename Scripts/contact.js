@@ -68,45 +68,45 @@ document.addEventListener('DOMContentLoaded', () => {
         let isValid = true;
 
         // Nombre — requerido, mínimo 2 caracteres
-        if (!fields.nombre.value.trim()) {
-            showError(fields.nombre, 'El nombre es requerido.');
+        if (!fields.Nombre.value.trim()) {
+            showError(fields.Nombre, 'El nombre es requerido.');
             isValid = false;
-        } else if (fields.nombre.value.trim().length < 2) {
-            showError(fields.nombre, 'El nombre debe tener al menos 2 caracteres.');
+        } else if (fields.Nombre.value.trim().length < 2) {
+            showError(fields.Nombre, 'El nombre debe tener al menos 2 caracteres.');
             isValid = false;
         } else {
-            clearError(fields.nombre);
+            clearError(fields.Nombre);
         }
 
         // Email — requerido, formato básico
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!fields.email.value.trim()) {
-            showError(fields.email, 'El correo es requerido.');
+        if (!fields.Correo.value.trim()) {
+            showError(fields.Correo, 'El correo es requerido.');
             isValid = false;
-        } else if (!emailRegex.test(fields.email.value.trim())) {
-            showError(fields.email, 'Ingresa un correo válido.');
+        } else if (!emailRegex.test(fields.Correo.value.trim())) {
+            showError(fields.Correo, 'Ingresa un correo válido.');
             isValid = false;
         } else {
-            clearError(fields.email);
+            clearError(fields.Correo);
         }
 
         // Asunto — requerido
-        if (!fields.asunto.value) {
-            showError(fields.asunto, 'Selecciona un asunto.');
+        if (!fields.Asunto.value) {
+            showError(fields.Asunto, 'Selecciona un asunto.');
             isValid = false;
         } else {
-            clearError(fields.asunto);
+            clearError(fields.Asunto);
         }
 
         // Mensaje — requerido, mínimo 10 caracteres
-        if (!fields.mensaje.value.trim()) {
-            showError(fields.mensaje, 'El mensaje es requerido.');
+        if (!fields.Mensaje.value.trim()) {
+            showError(fields.Mensaje, 'El mensaje es requerido.');
             isValid = false;
-        } else if (fields.mensaje.value.trim().length < 10) {
-            showError(fields.mensaje, 'El mensaje debe tener al menos 10 caracteres.');
+        } else if (fields.Mensaje.value.trim().length < 10) {
+            showError(fields.Mensaje, 'El mensaje debe tener al menos 10 caracteres.');
             isValid = false;
         } else {
-            clearError(fields.mensaje);
+            clearError(fields.Mensaje);
         }
 
         return isValid;
@@ -129,10 +129,10 @@ document.addEventListener('DOMContentLoaded', () => {
         setLoading(true);
 
         const body = {
-            Nombre:  fields.nombre.value.trim(),
-            Correo:   fields.email.value.trim(),
-            Asunto:  fields.asunto.value,
-            Mensaje: fields.mensaje.value.trim(),
+            Nombre:  fields.Nombre.value.trim(),
+            Correo:   fields.Correo.value.trim(),
+            Asunto:  fields.Asunto.value,
+            Mensaje: fields.Mensaje.value.trim(),
         };
 
         try {
