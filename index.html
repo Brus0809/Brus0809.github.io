@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portafolio profesional de Braulio Martínez Sánchez — Desarrollador de Software especializado en .NET, C# y SQL Server. Automatización de procesos fiscales y sistemas empresariales.">
+    <meta name="keywords"
+        content="Braulio Martínez, Desarrollador .NET, C#, SQL Server, Portafolio, CRM, Facturación Electrónica">
+    <meta name="author" content="Braulio Martínez Sánchez">
+    <title>Braulio Martínez Sánchez — Desarrollador de Software</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>BMS<span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#about" class="nav-link">Sobre mí</a></li>
+                <li><a href="#experience" class="nav-link">Experiencia</a></li>
+                <li><a href="#projects" class="nav-link">Proyectos</a></li>
+                <li><a href="#skills" class="nav-link">Habilidades</a></li>
+                <li><a href="#education" class="nav-link">Educación</a></li>
+                <li><a href="#contact" class="nav-link nav-link-cta">Contacto</a></li>
+            </ul>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5" />
+                    <line x1="12" y1="1" x2="12" y2="3" />
+                    <line x1="12" y1="21" x2="12" y2="23" />
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                    <line x1="1" y1="12" x2="3" y2="12" />
+                    <line x1="21" y1="12" x2="23" y2="12" />
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                </svg>
+                <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                </svg>
+            </button>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Disponible para nuevos proyectos
+            </div>
+            <h1 class="hero-title">
+                <span class="hero-greeting">Hola, soy</span>
+                <span class="hero-name">Braulio Martínez</span>
+                <span class="hero-role">
+                    <span class="typing-text" id="typing-text"></span>
+                    <span class="cursor">|</span>
+                </span>
+            </h1>
+            <p class="hero-description">
+                Ingeniero en Sistemas especializado en <strong>automatización de procesos fiscales</strong>
+                y <strong>sistemas empresariales</strong> con .NET. Construyo soluciones escalables que
+                resuelven problemas reales de negocio.
+            </p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-secondary">
+                    <span>Ver Proyectos</span>
+                </a>
+                <a href="/Files/CV_Braulio_Martinez.pdf"
+                    class="btn btn-secondary"
+                    download="CV_Braulio_Martinez.pdf">
+                    <span>Descargar CV</span>
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <span>Contáctame</span>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-target="9">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Meses de experiencia</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-target="35">0</span><span class="stat-suffix">%</span>
+                    <span class="stat-label">Reducción en tiempos</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-target="5">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Proyectos entregados</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <a href="#about" class="scroll-indicator">
+                <div class="scroll-line"></div>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">01. Conóceme</span>
+                <h2 class="section-title">Sobre Mí</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Soy un <strong>Ingeniero en Sistemas Computacionales</strong> apasionado por crear
+                        soluciones tecnológicas que generan impacto real en los negocios. Mi especialidad
+                        está en el ecosistema <strong>.NET</strong>, donde he construido desde CRMs completos
+                        hasta bots de automatización.
+                    </p>
+                    <p>
+                        En mi experiencia en <strong>Data Express Latinoamérica</strong>, tuve la oportunidad
+                        de diseñar y desarrollar un CRM interno desde cero, optimizar motores de facturación
+                        electrónica y automatizar procesos que antes eran completamente manuales, logrando
+                        una <strong>reducción del ~35% en tiempos de gestión</strong>.
+                    </p>
+                    <p>
+                        Me motiva resolver problemas complejos con código limpio y soluciones escalables.
+                        Siempre estoy buscando aprender nuevas tecnologías y mejorar mis habilidades.
+                    </p>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            <span>Toluca / Metepec, Estado de México</span>
+                        </div>
+                        <div class="detail-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                            </svg>
+                            <span>Desarrollador de Software</span>
+                        </div>
+                        <div class="detail-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                                <path d="M6 12v5c6 3 10 0 12-1v-4" />
+                            </svg>
+                            <span>Ing. en Sistemas Computacionales</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-frame">
+                        <div class="code-window">
+                            <div class="window-header">
+                                <div class="window-dots">
+                                    <span class="dot red"></span>
+                                    <span class="dot yellow"></span>
+                                    <span class="dot green"></span>
+                                </div>
+                                <span class="window-title">braulio.cs</span>
+                            </div>
+                            <div class="window-body">
+                                <pre><code><span class="code-keyword">public class</span> <span class="code-class">Developer</span>
+<span class="code-name-class">{</span>
+    <span class="code-keyword">public string</span> <span class="code-name-class">Name =></span>
+        <span class="code-string">"Braulio Martínez"</span><span class="code-name-class">;</span> 
+    <span class="code-keyword">public string[]</span> <span class="code-name-class">Skills =></span> 
+        <span class="code-keyword">new</span><span class="code-name-class">[]</span> <span class="code-name-class">{</span> <span class="code-string">"C#"</span><span class="code-name-class">,</span> <span class="code-string">".NET"</span><span class="code-name-class">,</span> 
+        <span class="code-string">"SQL Server"</span> <span class="code-name-class">};</span>
+    <span class="code-keyword">public bool</span> <span class="code-name-class">IsAvailable =></span>
+        <span class="code-keyword">true</span><span class="code-name-class">;</span>
+    
+    <span class="code-keyword">public string</span> <span class="code-method">GetMotto</span><span class="code-name-class">() =></span>
+        <span class="code-string">"Código limpio</span><span class="code-name-class">,</span>
+         <span class="code-string">Soluciones limpias"</span><span class="code-name-class">;</span>
+<span class="code-name-class">}</span></code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">02. Trayectoria</span>
+                <h2 class="section-title">Experiencia Laboral</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-title">Desarrollador de Software</h3>
+                                <span class="timeline-company">Data Express Latinoamérica</span>
+                            </div>
+                            <span class="timeline-date">Jul 2025 — May 2026</span>
+                        </div>
+                        <ul class="timeline-list">
+                            <li>
+                                <div>
+                                    <strong>- CRM Interno desde cero</strong> en C#/.NET — Diseñé y desarrollé un sistema
+                                    completo de gestión administrativa,
+                                    <span class="highlight">reduciendo ~35% los tiempos de gestión</span>.
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <strong>- Optimización del motor de facturación</strong> electrónica DX, mejorando
+                                    estabilidad y
+                                    <span class="highlight">reduciendo rechazos ante el SAT</span>.
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <strong>- Automatización de cancelaciones</strong> con job .NET que reintentaba hasta
+                                    lograr aceptación,
+                                    <span class="highlight">eliminando el proceso manual</span>.
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <strong>- Bot de autofacturación vía WhatsApp</strong> integrado al sistema DX con
+                                    .NET Core,
+                                    <span class="highlight">reduciendo carga del equipo de soporte</span>.
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <strong>- Integraciones con terceros:</strong> PEP, OFIS, Simphony — Soporte técnico y
+                                    desarrollo de conectores.
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <strong>- Stored Procedures en SQL Server</strong> — Diseño y optimización para
+                                    reportes y lógica de negocio en CRM y DX.
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">C#</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">.NET Framework</span>
+                            <span class="tag">.NET Core</span>
+                            <span class="tag">SQL Server</span>
+                            <span class="tag">WhatsApp API</span>
+                            <span class="tag">REST APIs</span>
+                            <span class="tag">SAT</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">03. Portafolio</span>
+                <h2 class="section-title">Proyectos Destacados</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1: CRM -->
+                <div class="project-card featured" data-aos="fade-up">
+                    <a href="http://crmpruebas.somee.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-card">
+                        <div class="project-card-inner">
+                            <div class="project-icon-area">
+                                <div class="project-icon">
+                                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                        <circle cx="9" cy="7" r="4" />
+                                        <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                                        <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                                    </svg>
+                                </div>
+                                <span class="project-badge">Proyecto Principal</span>
+                            </div>
+
+                            <h3 class="project-title">CRM Interno</h3> <span class="highlight"> (Demo disponible. Haz clic para acceder al sistema).</span>
+
+                            <p class="project-description">
+                                Sistema de gestión administrativa completo con módulos de clientes, seguimiento de casos,
+                                reportes dinámicos y automatización de flujos. Desarrollado desde cero para Data Express
+                                Latinoamérica.
+                            </p>
+
+                            <div class="project-impact">
+                                <div class="impact-item">
+                                    <span class="impact-value">~35%</span>
+                                    <span class="impact-label">Reducción en tiempos de gestión</span>
+                                </div>
+                            </div>
+
+                            <div class="project-tech">
+                                <span>C#</span>
+                                <span>JavaScript</span>
+                                <span>.NET Framework (MVC)</span>
+                                <span>SQL Server</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Project 2: WhatsApp Bot -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card-inner">
+                        <div class="project-icon-area">
+                            <div class="project-icon">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                                    <path d="M8 10h.01" />
+                                    <path d="M12 10h.01" />
+                                    <path d="M16 10h.01" />
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Bot de Autofacturación WhatsApp</h3>
+                        <p class="project-description">
+                            Bot inteligente que permite a clientes generar facturas electrónicas directamente
+                            desde WhatsApp, integrado al motor de facturación DX.
+                        </p>
+                        <div class="project-impact">
+                            <div class="impact-item">
+                                <span class="impact-value">↓</span>
+                                <span class="impact-label">Menor carga de solicitudes manuales</span>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span>C#</span>
+                            <span>.NET Core</span>
+                            <span>WhatsApp API</span>
+                            <span>API REST</span>
+                            <span>SAT</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Facturación -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card-inner">
+                        <div class="project-icon-area">
+                            <div class="project-icon">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                    <polyline points="14 2 14 8 20 8" />
+                                    <line x1="16" y1="13" x2="8" y2="13" />
+                                    <line x1="16" y1="17" x2="8" y2="17" />
+                                    <polyline points="10 9 9 9 8 9" />
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Motor de Facturación DX</h3>
+                        <p class="project-description">
+                            Optimización del motor de facturación electrónica con automatización de cancelaciones,
+                            reprocesamiento inteligente y consulta semanal de comprobantes.
+                        </p>
+                        <div class="project-impact">
+                            <div class="impact-item">
+                                <span class="impact-value">✓</span>
+                                <span class="impact-label">Reducción de rechazos ante el SAT</span>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span>C#</span>
+                            <span>.NET Framework (Web Forms)</span>
+                            <span>SQL Server</span>
+                            <span>Micro Servicios</span>
+                            <span>API REST</span>
+                            <span>SAT</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">04. Tecnologías</span>
+                <h2 class="section-title">Habilidades Técnicas</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category" data-aos="fade-up">
+                    <div class="skill-category-header">
+                        <div class="skill-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="16 18 22 12 16 6" />
+                                <polyline points="8 6 2 12 8 18" />
+                            </svg>
+                        </div>
+                        <h3>Backend</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>C#</span>
+                                <span class="skill-level">Avanzado</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>.NET Framework</span>
+                                <span class="skill-level">Avanzado</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>.NET Core</span>
+                                <span class="skill-level">Avanzado</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>APIs REST</span>
+                                <span class="skill-level">Intermedio</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-category-header">
+                        <div class="skill-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <ellipse cx="12" cy="5" rx="9" ry="3" />
+                                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+                                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+                            </svg>
+                        </div>
+                        <h3>Base de Datos</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>SQL Server</span>
+                                <span class="skill-level">Avanzado</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Stored Procedures</span>
+                                <span class="skill-level">Avanzado</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Optimización de Consultas</span>
+                                <span class="skill-level">Intermedio</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-category-header">
+                        <div class="skill-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                                <path d="M2 17l10 5 10-5" />
+                                <path d="M2 12l10 5 10-5" />
+                            </svg>
+                        </div>
+                        <h3>Especialidad</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Facturación SAT</span>
+                                <span class="skill-level">Avanzado</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>WhatsApp Bots</span>
+                                <span class="skill-level">Avanzado</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>CRM Development</span>
+                                <span class="skill-level">Avanzado</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Automatización</span>
+                                <span class="skill-level">Avanzado</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-category-header">
+                        <div class="skill-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+                            </svg>
+                        </div>
+                        <h3>Frontend & Herramientas</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>JavaScript</span>
+                                <span class="skill-level">Intermedio</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="65"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>HTML / CSS</span>
+                                <span class="skill-level">Intermedio</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="65"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Git</span>
+                                <span class="skill-level">Intermedio</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="70"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">05. Formación</span>
+                <h2 class="section-title">Educación</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="education-card" data-aos="fade-up">
+                <div class="edu-icon">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.5">
+                        <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                        <path d="M6 12v5c6 3 10 0 12-1v-4" />
+                    </svg>
+                </div>
+                <div class="edu-content">
+                    <h3>Ingeniería en Sistemas Computacionales</h3>
+                    <p class="edu-school">Tecnológico de Estudios Superiores de Villa Guerrero (TESVG)</p>
+                    <p class="edu-location">Villa Guerrero, Estado de México</p>
+                    <span class="edu-year">Titulado 2026</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">06. Contacto</span>
+                <h2 class="section-title">¿Trabajamos juntos?</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <p class="contact-text">
+                    Estoy abierto a nuevas oportunidades laborales y proyectos interesantes.
+                    Si tienes una propuesta o simplemente quieres conectar, ¡no dudes en escribirme!
+                </p>
+
+                <!-- Formulario -->
+                <div class="contact-form-card">
+                    <div class="contact-form-row">
+                        <div class="contact-form-group">
+                            <label class="contact-form-label" for="contact-nombre">Nombre</label>
+                            <input class="contact-form-input" type="text" id="contact-nombre" name="nombre"
+                                placeholder="Tu nombre completo" />
+                        </div>
+                        <div class="contact-form-group">
+                            <label class="contact-form-label" for="contact-email-input">Email</label>
+                            <input class="contact-form-input" type="email" id="contact-email-input" name="email"
+                                placeholder="tu@correo.com" />
+                        </div>
+                    </div>
+                    <div class="contact-form-group">
+                        <label class="contact-form-label" for="contact-asunto">Asunto</label>
+                        <select class="contact-form-select" id="contact-asunto" name="asunto">
+                            <option value="" disabled selected>Selecciona un motivo...</option>
+                            <option value="trabajo">Propuesta de trabajo</option>
+                            <option value="freelance">Proyecto freelance</option>
+                            <option value="consultoria">Consultoría técnica</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    <div class="contact-form-group">
+                        <label class="contact-form-label" for="contact-mensaje">Mensaje</label>
+                        <textarea class="contact-form-textarea" id="contact-mensaje" name="mensaje"
+                            placeholder="Cuéntame sobre tu proyecto o propuesta..." maxlength="500"
+                            oninput="document.getElementById('contact-char-count').textContent = this.value.length + '/500'"></textarea>
+                        <span class="contact-form-char" id="contact-char-count">0/500</span>
+                    </div>
+                    <div class="contact-form-footer">
+                        <span class="contact-form-note">
+                            <span class="contact-form-note-dot"></span>
+                            Respondo en menos de 24 horas
+                        </span>
+                        <button class="btn btn-secondary" id="contact-submit">
+                            <span>Enviar mensaje</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Divisor -->
+                <div class="contact-divider">
+                    <div class="contact-divider-line"></div>
+                    <span class="contact-divider-text">O contáctame directamente</span>
+                    <div class="contact-divider-line"></div>
+                </div>
+
+                <!-- Tarjetas de contacto -->
+                <div class="contact-cards">
+                    <a href="mailto:marsanbrau0809@gmail.com" class="contact-card" id="contact-email">
+                        <div class="contact-card-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                        </div>
+                        <div class="contact-card-info">
+                            <span class="contact-card-label">Email</span>
+                            <span class="contact-card-value">marsanbrau0809@gmail.com</span>
+                        </div>
+                    </a>
+                    <a href="tel:+527228430203" class="contact-card" id="contact-phone">
+                        <div class="contact-card-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                            </svg>
+                        </div>
+                        <div class="contact-card-info">
+                            <span class="contact-card-label">Teléfono</span>
+                            <span class="contact-card-value">+52 722 843 0203</span>
+                        </div>
+                    </a>
+                    <a href="https://linkedin.com/in/braulio-martinez-243132363" target="_blank" rel="noopener"
+                        class="contact-card" id="contact-linkedin">
+                        <div class="contact-card-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                <rect x="2" y="9" width="4" height="12" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg>
+                        </div>
+                        <div class="contact-card-info">
+                            <span class="contact-card-label">LinkedIn</span>
+                            <span class="contact-card-value">braulio-martinez</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">
+                    Diseñado y desarrollado por <strong>Braulio Martínez Sánchez</strong>
+                </p>
+                <p class="footer-year">© 2026 — Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/Scripts/script.js"></script>
+    <script src="/Scripts/contact.js"></script>
+</body>
+
+</html>
