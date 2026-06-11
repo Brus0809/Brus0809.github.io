@@ -42,11 +42,11 @@ const whatsappSteps = [
         ]
     },
     {
-        title: "Paso 6: Validación del Ticket de Compra",
-        desc: "El usuario ingresa el folio o código del ticket de compra y el monto total para que el bot corrobore los datos de la transacción en el ERP.",
+        title: "Paso 6: Validación de Datos",
+        desc: "Una vez capturados los datos del ticket (dependiendo de la integración) y los datos del receptor, el bot valida automáticamente la información proporcionada, como RFC, código postal y correo electrónico. Si los datos son correctos, solicita la confirmación del usuario para guardarlos; en caso contrario, permite realizar correcciones antes de continuar. Si el receptor ya existe en la base de datos, la información se actualiza automáticamente.",
         bullets: [
-            "Integración en tiempo real con la base de datos del ERP / Punto de Venta (Simphony/PEP/OFIS).",
-            "Validación de vigencia de la compra para evitar la facturación de tickets vencidos o duplicados."
+            "Validación automática de RFC, código postal y correo electrónico antes de generar la factura.",
+            "Actualización automática de datos de clientes existentes para mantener la información siempre actualizada."
         ]
     },
     {
