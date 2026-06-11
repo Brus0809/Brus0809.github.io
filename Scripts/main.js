@@ -17,5 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
     initSmoothScroll();
 
     initImageModal();
+    initWhatsAppCarousel();
 
 });
